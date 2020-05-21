@@ -56,6 +56,9 @@ class SequenceManager extends BaseSequenceManager
         } catch (PessimisticLockException $e) {
             $this->objectManager->rollback();
             throw $e;
+        } catch (\Exception $e) {
+            $this->objectManager->rollback();
+            throw $e;
         }
     }
 
