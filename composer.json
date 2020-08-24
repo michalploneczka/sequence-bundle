@@ -12,8 +12,7 @@
         }
     ],
     "require": {
-        "doctrine/annotations": "^1.10",
-        "sensio/framework-extra-bundle": "^5.5"
+        "symfony/symfony": "^5.1"
     },
     "require-dev": {
         "doctrine/doctrine-bundle": "^2.1",
